@@ -29,7 +29,7 @@ public class WeatherReportApp {
                 .get(DailyReportResp.class);*/
         CoordResp resp = client.target("http://api.openweathermap.org/geo/1.0/zip")
                 .queryParam("zip", "11789,US")
-                .queryParam("appid", "abb29b9602064f8586c5074c3d0ff720")
+                .queryParam("appid", "")
                 .request(MediaType.APPLICATION_JSON)
                 .get(CoordResp.class);
         System.out.println("------------"+resp);
