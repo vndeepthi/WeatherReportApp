@@ -32,6 +32,6 @@ public class WeatherReportApp {
                 .queryParam("appid", "")
                 .request(MediaType.APPLICATION_JSON)
                 .get(CoordResp.class);
-        System.out.println("------------"+resp);
+        System.out.println("------------" + resp);
     }
 }
